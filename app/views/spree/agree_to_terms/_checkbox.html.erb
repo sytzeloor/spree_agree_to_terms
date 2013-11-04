@@ -1,0 +1,9 @@
+<hr />
+<div id="agree_to_terms" data-hook class="row">
+  <div class="col-xs-2">
+    <%= order_form.check_box(:agreed_to_terms) %>
+  </div>
+  <div class="col-xs-10">
+    <%= link_to Spree::AgreeToTerms::Config[:agree_to_terms_label], Spree::AgreeToTerms::Config[:agree_to_terms_url] %>
+  </div>
+</div>

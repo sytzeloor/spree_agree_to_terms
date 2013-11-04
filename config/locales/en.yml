@@ -1,0 +1,16 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    agree_to_terms:
+      settings:
+        agree_to_terms_label: Checkbox label
+        agree_to_terms_url: URL of page with terms
+      settings_tab: Agree to terms
+      page_title: Agree to terms
+
+  activerecord:
+    attributes:
+      spree/order:
+        agreed_to_terms: Terms

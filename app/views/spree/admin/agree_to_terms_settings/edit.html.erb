@@ -1,0 +1,20 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<% content_for :page_title do %>
+  <%= Spree.t(:page_title, scope: :agree_to_terms) %>
+<% end %>
+
+<%= form_tag admin_agree_to_terms_settings_path, :method => :put do %>
+  <% @agree_to_terms_preferences.each do |key| %>
+    <% type = Spree::AgreeToTerms::Config.preference_type(key) %>
+    <div class="field">
+      <%= label_tag(key, Spree.t(key, scope: [:agree_to_terms, :settings])) + tag(:br) if type != :boolean %>
+      <%= preference_field_tag(key, Spree::AgreeToTerms::Config[key], :type => type) %>
+      <%= label_tag(key, Spree.t(key, scope: [:agree_to_terms, :settings])) + tag(:br) if type == :boolean %>
+    </div>
+  <% end %>
+
+  <div class="form-buttons" data-hook="buttons">
+    <%= button Spree.t('actions.update'), 'icon-refresh' %>
+  </div>
+<% end %>
