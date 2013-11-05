@@ -1,3 +1,5 @@
+require 'spree_agree_to_terms/version'
+
 module SpreeAgreeToTerms
   class Engine < Rails::Engine
     require 'spree/core'

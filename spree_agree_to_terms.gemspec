@@ -1,9 +1,4 @@
 # encoding: UTF-8
-lib = File.expand_path('../lib/', __FILE__)
-$:.unshift lib unless $:.include?(lib)
-
-require 'spree_agree_to_terms/version'
-
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_agree_to_terms'

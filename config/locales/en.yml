@@ -9,6 +9,7 @@ en:
         agree_to_terms_url: URL of page with terms
       settings_tab: Agree to terms
       page_title: Agree to terms
+      successfully_updated: Settings successfully updated
 
   activerecord:
     attributes:
