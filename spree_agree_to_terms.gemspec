@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_agree_to_terms'
-  s.version     = '2.0.4'
+  s.version     = '2.1.3'
   s.summary     = 'Display a checkbox on the order page and force users to accept the terms'
   s.description = ''
   s.required_ruby_version = '>= 2.0.0'
